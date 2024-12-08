@@ -1,7 +1,7 @@
 # Movie Explorer App Specification
 
 ## 📘 Overview
-The **Movie Explorer App** is a web application where users can search, explore, and bookmark movies using a public movie database API (e.g., [TMDB API](https://www.themoviedb.org/documentation/api)). This app will provide a challenging yet rewarding experience by incorporating asynchronous JavaScript, HTML, CSS, API integration, and CI/CD principles.
+The **Movie Explorer App** is a web application where users can search, explore, and bookmark movies using a public movie database API (e.g., [TMDB API](https://www.themoviedb.org/documentation/api)). This app will incorporate asynchronous JavaScript, HTML, CSS, API integration, CI/CD principles, and jQuery.
 
 ---
 
@@ -51,6 +51,10 @@ The **Movie Explorer App** is a web application where users can search, explore,
 - Create a modern UI using **CSS Grid** and **Flexbox**.
 - Implement **dark/light mode** toggle.
 
+#### C. jQuery
+- Enhance interactivity with jQuery for DOM manipulation.
+- Example: Use jQuery for **search bar interactivity**, like dynamically appending results or toggling UI elements.
+
 ---
 
 ### 4. **Backend Requirements**
@@ -61,8 +65,8 @@ The **Movie Explorer App** is a web application where users can search, explore,
 
 ### 5. **Deployment and CI/CD**
 - Set up **GitHub Actions** for CI/CD to:
-    - Run automated tests (unit and integration).
-    - Build and deploy the application to platforms like **Netlify** or **Vercel**.
+  - Run automated tests (unit and integration).
+  - Build and deploy the application to platforms like **Netlify** or **Vercel**.
 - Automate linting and code formatting.
 
 ---
@@ -80,7 +84,8 @@ The **Movie Explorer App** is a web application where users can search, explore,
 ---
 
 ### 📝 Example Code Snippet
-Fetch popular movies from the TMDB API:
+
+#### A. Fetch Movies (JavaScript)
 ```javascript
 fetch('https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY')
   .then(response => response.json())
